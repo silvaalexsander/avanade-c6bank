@@ -25,10 +25,14 @@ const MenuContainer = styled.nav`
       border: solid 4px transparent;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
+      transition: .4s;
       &:hover{
         background: #888;
         border-left-color: #fffb19;
         cursor: pointer;
+        border-radius: 7px;
+        font-size: 1.3rem;
+        transition: .4s;
       }
     }
   }
