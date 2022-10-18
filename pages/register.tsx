@@ -5,19 +5,18 @@ import {
 } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Copyright from '../components/utils/Copyright';
-import Login from '../components/Form/Login';
 import Register from '../components/Form/Register';
 //@mui/material
 
 const theme = createTheme();
 
-export default function LoginPage(){
+export default function RegisterPage(){
 
    return (
         <ThemeProvider theme={theme}>
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
-                  <Register/>
+                <Register/>
                 <Copyright site="avanade"/>
             </Container>
         </ThemeProvider>
