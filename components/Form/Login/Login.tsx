@@ -55,7 +55,7 @@ export default function Login() {
                Login
            </Button>
 
-           {error && <Typography color="error">{errorMessage}</Typography>}
+           {error && <Snackbar open={error} hide={5} message={'A senha deve ter no minimo 6 caracteres'} severity='error'/>}
            {open && <Snackbar open={open} hide={5} message={'Usuário logado com sucesso! ...Aguarde...'} severity="success"/>}
 
         </Box>
