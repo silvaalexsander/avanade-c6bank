@@ -42,7 +42,7 @@ export default function Login() {
         alignItems:'center'
         }}>
        <Typography component="h1" variant="h5">
-           Tela de Login
+           {`Tela de Login`}
        </Typography>
        <Box component="form" onSubmit={handleSubmit} sx={{mt:1}}>
            <TextField margin="normal" required id="email" name="email" fullWidth label="Digite o login"  autoComplete="email" />
@@ -52,7 +52,7 @@ export default function Login() {
            label="Lembrar-me"
            />
            <Button type="submit" fullWidth variant="contained" sx={{mt:3, mb:2}}>
-               Login
+               {`Login`}
            </Button>
 
            {error && <Snackbar open={error} hide={5} message={'A senha deve ter no minimo 6 caracteres'} severity='error'/>}
